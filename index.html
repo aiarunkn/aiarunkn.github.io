@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aiaru (Rue) Naukenova — builder, Minerva University M'29, from Astana, Kazakhstan.">
+    <title>Rue Naukenova</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cursor" aria-hidden="true"></div>
+
+    <header>
+        <span class="logo">Rue</span>
+        <nav>
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="mailto:aiaru.nauken@gmail.com">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="eyebrow">Aiaru Naukenova&nbsp;&nbsp;·&nbsp;&nbsp;M'29</p>
+            <h1>Making things<br><em>that think.</em></h1>
+            <p class="tagline">Minerva University&nbsp;&nbsp;·&nbsp;&nbsp;Astana, Kazakhstan</p>
+        </div>
+        <div class="hero-photo">
+            <img src="images/portrait.jpg" alt="Rue Naukenova" />
+        </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+        <div class="ticker-track">
+            <span>AI Engineering &nbsp;·&nbsp; Astana, Kazakhstan &nbsp;·&nbsp; Minerva University M'29 &nbsp;·&nbsp; Central Asia &nbsp;·&nbsp; Builder &nbsp;·&nbsp; Thinker &nbsp;·&nbsp;&ensp;</span>
+            <span>AI Engineering &nbsp;·&nbsp; Astana, Kazakhstan &nbsp;·&nbsp; Minerva University M'29 &nbsp;·&nbsp; Central Asia &nbsp;·&nbsp; Builder &nbsp;·&nbsp; Thinker &nbsp;·&nbsp;&ensp;</span>
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="about-inner">
+            <p class="reveal">I grew up in Astana — a city willed into existence on the Kazakh steppe, where the skyline is all ambition and glass. That particular energy — building the new, fast, from scratch — has felt familiar to me for as long as I can remember.</p>
+            <p class="reveal" style="transition-delay:0.1s">I study at Minerva University, a school without a campus. We rotate through seven cities — San Francisco, Seoul, Hyderabad, Berlin, Buenos Aires, London, Taipei — carrying our work with us. Mine is building AI agents: systems that don't just process, but reason, adapt, and act.</p>
+            <p class="reveal" style="transition-delay:0.2s">Kenges started with a question: why does AI always feel foreign to Central Asia? A business advisor that actually understands the region — its context, its culture, its language of doing business — felt more necessary than another generic chatbot.</p>
+            <p class="also reveal" style="transition-delay:0.3s">Also drawn to: urban futures, nomadic philosophy, the aesthetics of new cities.</p>
+        </div>
+    </section>
+
+    <section class="work" id="work">
+        <p class="section-label">Selected Work</p>
+        <div class="projects">
+
+            <a href="https://trade-agent-orpin.vercel.app" target="_blank" rel="noopener" class="project reveal">
+                <span class="project-index">01</span>
+                <div class="project-body">
+                    <h2>Trade Agent</h2>
+                    <p>An autonomous trading agent — live market data, signal detection, and decision-making without a human in the loop.</p>
+                </div>
+                <span class="project-arrow">↗</span>
+            </a>
+
+            <a href="https://memoru-crm.vercel.app" target="_blank" rel="noopener" class="project reveal" style="transition-delay:0.1s">
+                <span class="project-index">02</span>
+                <div class="project-body">
+                    <h2>Memoru</h2>
+                    <p>A CRM that thinks relationally. It remembers context, surfaces what matters, and helps you stay genuinely close to the people you care about.</p>
+                </div>
+                <span class="project-arrow">↗</span>
+            </a>
+
+            <div class="project no-link reveal" style="transition-delay:0.2s">
+                <span class="project-index">03</span>
+                <div class="project-body">
+                    <h2>Kenges <span class="badge">Coming soon</span></h2>
+                    <p>A business advisor built from the ground up for Central Asia — fluent in regional culture, market dynamics, and the local language of doing business.</p>
+                </div>
+                <span class="project-arrow">·</span>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="now" id="now">
+        <p class="section-label">Now</p>
+        <div class="now-grid">
+            <div class="now-row reveal">
+                <span class="now-key">At</span>
+                <span class="now-val">Minerva University, Year 1</span>
+            </div>
+            <div class="now-row reveal" style="transition-delay:0.08s">
+                <span class="now-key">Between</span>
+                <span class="now-val">Astana × San Francisco</span>
+            </div>
+            <div class="now-row reveal" style="transition-delay:0.16s">
+                <span class="now-key">Building</span>
+                <span class="now-val">AI agents for the real world</span>
+            </div>
+            <div class="now-row reveal" style="transition-delay:0.24s">
+                <span class="now-key">Open to</span>
+                <span class="now-val">Good problems, interesting people</span>
+            </div>
+        </div>
+    </section>
+
+    <div class="photo-strip">
+        <img src="images/office.jpg" alt="" aria-hidden="true" />
+    </div>
+
+    <footer>
+        <div class="footer-inner">
+            <span>Aiaru Naukenova, 2026</span>
+            <div class="footer-right">
+                <a href="mailto:aiaru.nauken@gmail.com">aiaru.nauken@gmail.com</a>
+                <span class="footer-dim">Astana × San Francisco</span>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Custom cursor — desktop only
+        const cursor = document.querySelector('.cursor');
+        if (cursor && window.matchMedia('(hover: hover)').matches) {
+            document.addEventListener('mousemove', e => {
+                cursor.style.left = e.clientX + 'px';
+                cursor.style.top  = e.clientY + 'px';
+                cursor.style.opacity = '1';
+            });
+            document.querySelectorAll('a, .project').forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    cursor.style.transform = 'translate(-50%, -50%) scale(2.5)';
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+                });
+            });
+        }
+
+        // Scroll reveals
+        const io = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if (e.isIntersecting) {
+                    e.target.classList.add('visible');
+                    io.unobserve(e.target);
+                }
+            });
+        }, { threshold: 0.08, rootMargin: '0px 0px -30px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    </script>
+
+</body>
+</html>
