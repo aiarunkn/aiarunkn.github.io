@@ -4,9 +4,9 @@
    ========================================================= */
 
 :root{
-  --paper:#EDE5D4;        /* warm beige ground */
-  --paper-2:#E5DAC4;      /* deeper sand panel */
-  --cream:#F7F1E3;        /* raised card */
+  --paper:#F8F3E8;        /* warm beige ground */
+  --paper-2:#EDE5D4;      /* deeper sand panel */
+  --cream:#FDFAF4;        /* raised card */
   --ink:#2A2014;          /* espresso near-black */
   --bark:#473526;         /* dark walnut */
   --umber:#6E523A;        /* mid brown */
@@ -82,7 +82,7 @@ img{max-width:100%;display:block}
 /* ---------- Nav ---------- */
 header.nav{
   position:sticky;top:0;z-index:50;
-  background:rgba(237,229,212,.8);
+  background:rgba(248,243,232,.85);
   backdrop-filter:saturate(130%) blur(8px);
   border-bottom:1px solid transparent;
   transition:border-color .3s ease;
