@@ -10,70 +10,48 @@
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="home">
 
-<header class="nav" id="nav">
-  <a href="index.html" class="nav-logo">Aiaru</a>
-  <nav class="nav-links">
-    <a href="work.html">Work</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
+<nav class="corner-nav">
+  <a href="work.html">Work</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+</nav>
 
-<!-- 1. HERO -->
-<section class="home-hero">
-  <h1 class="enter e1">I drink my<br>coffee black.</h1>
-  <p class="hero-sub enter e2">And I built Kazakhstan's first freight marketplace because my uncle couldn't find loads. Solo. Two weeks. Live with users.</p>
-</section>
+<main class="home-main">
+  <div class="home-col enter">
 
-<!-- 2. PHOTO BAND — add images/skyline-night.webp -->
-<div class="photo-band reveal">
-  <img src="images/IMG_1879.webp" alt="Zhol app open on a laptop in a Kazakhstan field, freight truck behind" onerror="this.parentElement.classList.add('photo-band-empty');this.remove()" />
-  <span class="photo-caption">I WORK ANYWHERE.</span>
-</div>
+    <div class="home-portrait">
+      <img src="images/DSC07091.jpg" alt="Aiaru" />
+    </div>
 
-<!-- 4. WORK -->
-<section class="home-work">
-  <div class="home-work-label">Selected work</div>
+    <p class="home-kicker">Solo Founder — Building from Zero</p>
+    <h1 class="home-name">Aiaru</h1>
+    <p class="home-quote">"I drink my coffee black."</p>
 
-  <div class="work-entry featured reveal">
-    <a href="work.html"></a>
-    <span class="w-title">Zhol</span>
-    <span class="w-tag">Freight · KZ</span>
-    <p class="w-desc">Kazakhstan's first freight marketplace. Solo build. Two weeks. Live with users at launch.</p>
+    <div class="home-work">
+      <a class="home-proj" href="work.html">
+        <span class="home-proj-title">Zhol Freight</span>
+        <span class="home-proj-desc">Kazakhstan's first freight marketplace. Solo. Two weeks. Live with users.</span>
+      </a>
+      <a class="home-proj" href="https://github.com/aiarunkn/trade-agent" target="_blank" rel="noopener">
+        <span class="home-proj-title">Trade Agent</span>
+        <span class="home-proj-desc">AI agent for end-to-end trade workflows across Central Asia.</span>
+      </a>
+      <a class="home-proj" href="https://github.com/aiarunkn/memoru-crm" target="_blank" rel="noopener">
+        <span class="home-proj-title">Memoru</span>
+        <span class="home-proj-desc">Open-source CRM that builds your contacts from your event notes.</span>
+      </a>
+    </div>
+
+    <div class="home-bottom-links">
+      <a href="about.html">My story</a>
+      <span class="home-bottom-sep">·</span>
+      <a href="contact.html">Contact</a>
+    </div>
+
   </div>
-
-  <div class="work-entry reveal d1">
-    <a href="https://github.com/aiarunkn/trade-agent" target="_blank" rel="noopener"></a>
-    <span class="w-title">Trade Agent</span>
-    <span class="w-tag">AI · Logistics</span>
-    <p class="w-desc">AI agent for end-to-end trade workflows across Central Asia.</p>
-  </div>
-
-  <div class="work-entry reveal d2">
-    <a href="https://github.com/aiarunkn/memoru-crm" target="_blank" rel="noopener"></a>
-    <span class="w-title">Memoru</span>
-    <span class="w-tag">Open source</span>
-    <p class="w-desc">Personal CRM that builds your contact list from the notes you take at an event.</p>
-  </div>
-
-</section>
-
-<!-- 5. PHOTO BAND — add images/street-crossing.jpg -->
-<div class="photo-band reveal">
-  <img src="images/IMG_6867.webp" alt="San Francisco skyline from above" onerror="this.parentElement.classList.add('photo-band-empty');this.remove()" />
-  <span class="photo-caption">ALWAYS BETWEEN TWO CITIES.</span>
-</div>
-
-<!-- 6. FOOTER -->
-<footer class="home-footer">
-  <div class="f-top">
-    <a class="f-email" href="mailto:aiaru.nauken@gmail.com">aiaru.nauken@gmail.com</a>
-    <span class="f-where">San Francisco, CA</span>
-  </div>
-  <div class="f-copy">© <span data-year></span> Aiaru</div>
-</footer>
+</main>
 
 <script src="script.js"></script>
 </body>
