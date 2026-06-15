@@ -12,6 +12,38 @@
 </head>
 <body class="home">
 
+<!-- wireframe globe — fixed background -->
+<div class="globe-bg" aria-hidden="true">
+  <svg viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <clipPath id="gc">
+        <circle cx="500" cy="500" r="489"/>
+      </clipPath>
+    </defs>
+    <!-- grid lines clipped to sphere -->
+    <g clip-path="url(#gc)" stroke="#5C5248" stroke-width="0.75">
+      <!-- latitude lines (15° tilt oblique projection) -->
+      <ellipse cx="500" cy="34"  rx="85"  ry="22"/>
+      <ellipse cx="500" cy="90"  rx="245" ry="63"/>
+      <ellipse cx="500" cy="196" rx="375" ry="97"/>
+      <ellipse cx="500" cy="338" rx="461" ry="119"/>
+      <ellipse cx="500" cy="500" rx="490" ry="127"/>
+      <ellipse cx="500" cy="662" rx="461" ry="119"/>
+      <ellipse cx="500" cy="804" rx="375" ry="97"/>
+      <ellipse cx="500" cy="910" rx="245" ry="63"/>
+      <ellipse cx="500" cy="966" rx="85"  ry="22"/>
+      <!-- meridians -->
+      <line x1="500" y1="11"  x2="500" y2="989"/>
+      <ellipse cx="500" cy="500" rx="168" ry="490"/>
+      <ellipse cx="500" cy="500" rx="315" ry="490"/>
+      <ellipse cx="500" cy="500" rx="424" ry="490"/>
+      <ellipse cx="500" cy="500" rx="483" ry="490"/>
+    </g>
+    <!-- outer circle -->
+    <circle cx="500" cy="500" r="490" stroke="#5C5248" stroke-width="1"/>
+  </svg>
+</div>
+
 <nav class="corner-nav">
   <a href="work.html">Work</a>
   <a href="about.html">About</a>
@@ -27,7 +59,7 @@
 
     <p class="home-kicker">Solo Founder — Building from Zero</p>
     <h1 class="home-name">Aiaru</h1>
-    <p class="home-quote">"I drink my coffee black."</p>
+    <p class="home-quote">no ceiling to ambition.</p>
 
     <div class="home-work">
       <p class="home-work-label">Things I've built.</p>
