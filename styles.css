@@ -172,7 +172,7 @@ p.body strong { color: var(--text); font-weight: 500; }
   padding: 0 var(--pad) clamp(56px, 10vh, 96px);
 }
 .home-hero h1 {
-  font-family: var(--serif); font-weight: 300; font-style: italic;
+  font-family: var(--serif); font-weight: 300;
   font-size: clamp(60px, 12vw, 168px);
   line-height: .91; letter-spacing: -.025em; color: var(--text);
 }
@@ -288,7 +288,7 @@ p.body strong { color: var(--text); font-weight: 500; }
 /* inner page hero */
 .hero { padding-top: clamp(28px, 6vh, 64px); }
 .hero h1 {
-  font-family: var(--serif); font-weight: 300; font-style: italic;
+  font-family: var(--serif); font-weight: 300;
   font-size: clamp(56px, 13vw, 170px);
   line-height: .88; letter-spacing: -.03em; color: var(--text);
 }
