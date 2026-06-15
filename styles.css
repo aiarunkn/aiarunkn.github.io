@@ -337,6 +337,29 @@ body.contact-page {
   text-transform: uppercase; color: var(--muted);
 }
 
+.about-hobbies {
+  padding: clamp(48px, 7vh, 80px) 0 clamp(64px, 10vh, 100px);
+  border-top: 1px solid var(--line);
+}
+.about-hobbies-label {
+  font-family: var(--sans); font-size: 11px; letter-spacing: .16em;
+  text-transform: uppercase; color: var(--muted); margin-bottom: 22px;
+}
+.about-hobbies-lead {
+  font-family: var(--sans); font-size: clamp(16px, 1.9vw, 19px);
+  color: var(--text); margin-bottom: 24px; max-width: 48ch;
+}
+.about-hobbies-list {
+  list-style: none; display: flex; flex-direction: column; gap: 12px;
+}
+.about-hobbies-list li {
+  font-family: var(--sans); font-size: clamp(14px, 1.6vw, 16px);
+  color: var(--muted); max-width: 48ch;
+}
+.about-hobbies-list li::before {
+  content: "— "; color: var(--dim);
+}
+
 /* ============================================================
    INNER PAGES (about / work / contact)
    ============================================================ */
