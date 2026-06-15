@@ -3,118 +3,88 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Aiaru — Solutions Engineer</title>
-<meta name="description" content="Aiaru — 18, San Francisco. Solutions engineer, tool-agnostic. Sophomore at Minerva University. I get it right on the first take." />
+<title>Aiaru</title>
+<meta name="description" content="Aiaru — 18, San Francisco. I drop into any stack, any market, any problem and ship before the doubt sets in." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<!-- contour backdrop -->
-<div class="topo" aria-hidden="true">
-  <svg viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice">
-    <path class="c cdraw"        style="--len:4200" d="M760 120 C980 80,1280 140,1360 340 C1420 500,1300 720,1060 760 C820 800,600 700,560 500 C520 320,600 180,760 120 Z"/>
-    <path class="c bold cdraw s2" style="--len:3600" d="M820 200 C1000 170,1230 230,1290 400 C1330 520,1240 660,1050 690 C870 720,690 640,660 480 C640 360,700 240,820 200 Z"/>
-    <path class="c cdraw s3"     style="--len:3000" d="M870 270 C1010 250,1180 300,1230 440 C1260 540,1190 630,1040 650 C900 670,760 600,740 480 C730 390,780 300,870 270 Z"/>
-    <path class="c cdraw s4"     style="--len:2400" d="M910 330 C1020 320,1140 360,1180 460 C1200 540,1150 600,1030 615 C920 630,820 580,810 490 C805 420,840 350,910 330 Z"/>
-    <path class="c cdraw s5"     style="--len:1800" d="M945 390 C1025 385,1100 415,1125 480 C1140 535,1100 575,1015 585 C935 595,870 560,865 495 C862 445,890 400,945 390 Z"/>
-    <path class="c bold cdraw s2" style="--len:1400" d="M-40 560 C220 520,420 600,600 540 C700 505,760 470,860 470"/>
-    <path class="c cdraw s4"     style="--len:1500" d="M-40 700 C240 680,460 740,660 660 C800 605,900 600,1010 610"/>
-    <path class="c cdraw s6"     style="--len:1300" d="M-40 360 C180 330,360 380,520 340 C640 310,720 300,820 320"/>
-  </svg>
+<header class="nav" id="nav">
+  <a href="index.html" class="nav-logo">Aiaru</a>
+  <nav class="nav-links">
+    <a href="work.html">Work</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<!-- 1. HERO -->
+<section class="home-hero">
+  <h1 class="enter e1">I drink my<br>coffee black.</h1>
+  <p class="hero-sub enter e2">And I built Kazakhstan's first freight marketplace because my uncle couldn't find loads. Solo. Two weeks. Live with users.</p>
+</section>
+
+<!-- 2. PHOTO BAND — add images/skyline-night.webp -->
+<div class="photo-band reveal">
+  <img src="images/IMG_1879.webp" alt="Zhol app open on a laptop in a Kazakhstan field, freight truck behind" onerror="this.parentElement.classList.add('photo-band-empty');this.remove()" />
+  <span class="photo-caption">I WORK ANYWHERE.</span>
 </div>
 
-<div class="wrap">
-
-  <!-- nav -->
-  <header class="nav" id="nav">
-    <div class="shell nav-in">
-      <a href="index.html" class="brand"><span class="mk"></span>Aiaru</a>
-      <nav class="nav-links">
-        <a href="index.html" class="label active">Home</a>
-        <a href="about.html" class="label">About</a>
-        <a href="work.html" class="label">Work</a>
-        <a href="contact.html" class="nav-cta">Let's talk</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="shell">
-
-    <div class="pageframe enter e1">
-      <span class="coord">SHEET 01 / 04 — BASE MAP</span>
-      <span><b>51°N</b> → <b>37°N</b> · ASTANA → SAN FRANCISCO</span>
-    </div>
-
-    <!-- hero -->
-    <section class="hero">
-      <p class="role enter e1">Solutions Engineer — tool-agnostic</p>
-      <h1 class="enter e2">Aiaru</h1>
-      <p class="statement enter e3">I get it right on the <u>first take.</u></p>
-      <p class="sub enter e4">18, based in San Francisco. I drop into any stack, any market, any problem — and ship it before the doubt sets in. Sophomore at Minerva University, double-majoring in Business &amp; Computer Science.</p>
-      <div class="ctas enter e5">
-        <a class="btn solid" href="work.html">See the work →</a>
-        <a class="btn ghost" href="about.html">Read the story</a>
-      </div>
-    </section>
-
-    <!-- facts -->
-    <section>
-      <div class="facts reveal">
-        <div class="fact"><div class="k">Based</div><div class="v">San Francisco, CA</div></div>
-        <div class="fact"><div class="k">Studying</div><div class="v">Minerva · Business &amp; CS</div></div>
-        <div class="fact"><div class="k">Origin</div><div class="v">Astana, Kazakhstan</div></div>
-        <div class="fact"><div class="k">Method</div><div class="v">One take, shipped</div></div>
-      </div>
-    </section>
-
-    <!-- photos -->
-    <section class="photo-pair reveal">
-      <div class="photo-item">
-        <img src="images/DSC06855_2.webp" alt="Aiaru in San Francisco" />
-      </div>
-      <div class="photo-item">
-        <img src="images/IMG_5519.webp" alt="Black coffee and the New York Times" />
-      </div>
-    </section>
-
-    <!-- the survey: links into the other sheets -->
-    <section class="section">
-      <div class="eyebrow reveal"><span class="num">02 / 04</span> The survey</div>
-      <h2 class="head reveal d1">Three sheets. Pick a heading.</h2>
-      <div class="triad">
-        <a class="card reveal d1" href="about.html">
-          <div class="ic">SHEET 02 ↗</div>
-          <h3>Field notes</h3>
-          <p>How a kid who sang on stages became someone who does things once, cleanly. The chameleon, the horse, the adaptability.</p>
-        </a>
-        <a class="card reveal d2" href="work.html">
-          <div class="ic">SHEET 03 ↗</div>
-          <h3>Surveyed work</h3>
-          <p>Kazakhstan's first freight marketplace — solo, in 14 days. Plus civic tooling, an AI trade agent, an open-source CRM, and client builds.</p>
-        </a>
-        <a class="card reveal d3" href="contact.html">
-          <div class="ic">SHEET 04 ↗</div>
-          <h3>Make contact</h3>
-          <p>Hiring, collaborating, or comparing notes on building across two continents. Links, email, and where to find me next.</p>
-        </a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="shell">
-    <div class="foot-in">
-      <span>© <span data-year></span> Aiaru · San Francisco, CA · 37°N</span>
-      <span class="footnav"><a href="about.html">About</a><a href="work.html">Work</a><a href="contact.html">Contact</a></span>
-      <span>Surveyed in one take.</span>
-    </div>
-  </footer>
-
-  <div class="elev" aria-hidden="true"><span class="tick"></span>elev <span id="elevVal">0000 m</span></div>
+<!-- 3. ONE LINE -->
+<div class="one-line reveal">
+  <p>I drop into any stack, any market, any problem — and ship before the doubt sets in. 18. Astana ↔ San Francisco.</p>
 </div>
+
+<!-- 4. WORK -->
+<section class="home-work">
+  <div class="home-work-label">Selected work</div>
+
+  <div class="work-entry featured reveal">
+    <a href="work.html"></a>
+    <span class="w-title">Zhol</span>
+    <span class="w-tag">Freight · KZ</span>
+    <p class="w-desc">Kazakhstan's first freight marketplace. Solo build. Two weeks. Live with users at launch.</p>
+  </div>
+
+  <div class="work-entry reveal d1">
+    <a href="https://github.com/aiarunkn/trade-agent" target="_blank" rel="noopener"></a>
+    <span class="w-title">Trade Agent</span>
+    <span class="w-tag">AI · Logistics</span>
+    <p class="w-desc">AI agent for end-to-end trade workflows across Central Asia.</p>
+  </div>
+
+  <div class="work-entry reveal d2">
+    <a href="https://github.com/aiarunkn/memoru-crm" target="_blank" rel="noopener"></a>
+    <span class="w-title">Memoru</span>
+    <span class="w-tag">Open source</span>
+    <p class="w-desc">Personal CRM that builds your contact list from the notes you take at an event.</p>
+  </div>
+
+  <div class="work-entry reveal d3">
+    <a href="work.html"></a>
+    <span class="w-title">Language via games</span>
+    <span class="w-tag">EdTech · Founder</span>
+    <p class="w-desc">Teaching languages inside games people actually want to play.</p>
+  </div>
+</section>
+
+<!-- 5. PHOTO BAND — add images/street-crossing.jpg -->
+<div class="photo-band reveal">
+  <img src="images/IMG_6867.webp" alt="San Francisco skyline from above" onerror="this.parentElement.classList.add('photo-band-empty');this.remove()" />
+  <span class="photo-caption">ALWAYS BETWEEN TWO CITIES.</span>
+</div>
+
+<!-- 6. FOOTER -->
+<footer class="home-footer">
+  <div class="f-top">
+    <a class="f-email" href="mailto:aiaru.nauken@gmail.com">aiaru.nauken@gmail.com</a>
+    <span class="f-where">San Francisco, CA</span>
+  </div>
+  <div class="f-copy">© <span data-year></span> Aiaru</div>
+</footer>
 
 <script src="script.js"></script>
 </body>
