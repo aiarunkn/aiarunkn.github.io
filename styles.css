@@ -191,45 +191,55 @@ body.contact-page {
    ABOUT PAGE
    ============================================================ */
 
-.about-title {
-  padding: clamp(48px, 8vh, 80px) 0 clamp(32px, 5vh, 56px);
+.story-main {
+  padding-top: clamp(52px, 8vh, 88px);
+  padding-bottom: clamp(64px, 10vh, 100px);
 }
-.about-title h1 {
+
+.story-heading {
   font-family: var(--sans); font-weight: 700;
-  font-size: clamp(48px, 10vw, 120px);
-  line-height: .92; letter-spacing: -.03em; color: var(--text);
+  font-size: clamp(36px, 7vw, 80px);
+  line-height: .92; letter-spacing: -.02em; color: var(--text);
+  text-transform: uppercase;
+  margin-bottom: clamp(36px, 5vh, 56px);
 }
 
-.about-image {
-  width: 100%; overflow: hidden;
-  height: clamp(480px, 78vh, 920px);
+.story-portrait {
+  width: 100%; max-width: 300px;
+  margin-bottom: clamp(48px, 7vh, 72px);
 }
-.about-image img {
-  width: 100%; height: 100%; object-fit: cover; object-position: center top;
-  filter: grayscale(1) brightness(.88);
-}
-
-.about-body {
-  padding: clamp(56px, 9vh, 100px) 0;
-  display: flex; flex-direction: column; gap: 28px;
-}
-.about-body p {
-  font-family: var(--sans); font-size: clamp(15px, 1.7vw, 18px);
-  line-height: 1.7; color: var(--text); max-width: 54ch; font-weight: 400;
+.story-portrait img {
+  width: 100%; display: block;
+  filter: grayscale(1) brightness(.9);
 }
 
-.about-creds {
-  border-top: 1px solid var(--line); padding-top: 28px;
-  padding-bottom: clamp(48px, 7vh, 80px);
+.story-lines {
+  display: flex; flex-direction: column;
+  gap: clamp(22px, 3.5vh, 36px);
+  margin-bottom: clamp(56px, 8vh, 88px);
+}
+.story-line {
+  font-family: var(--sans); font-size: clamp(15px, 1.8vw, 19px);
+  font-weight: 400; line-height: 1.45; color: var(--text);
+  max-width: 58ch;
+}
+
+.story-divider {
+  width: 100%; height: 1px; background: var(--line);
+  margin-bottom: clamp(32px, 4.5vh, 48px);
+}
+
+.story-creds {
   display: flex; flex-direction: column; gap: 10px;
+  margin-bottom: clamp(56px, 8vh, 88px);
 }
-.about-cred {
+.story-cred {
   font-family: var(--sans); font-size: 11px; font-weight: 500;
-  letter-spacing: .08em; text-transform: uppercase; color: var(--muted);
+  letter-spacing: .1em; text-transform: uppercase; color: var(--muted);
 }
 
 .about-hobbies {
-  padding: clamp(48px, 7vh, 80px) 0 clamp(64px, 10vh, 100px);
+  padding: clamp(40px, 6vh, 64px) 0 0;
   border-top: 1px solid var(--line);
 }
 .about-hobbies-label {
