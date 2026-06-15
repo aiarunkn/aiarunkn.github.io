@@ -226,8 +226,13 @@ body.home {
 
 /* work list */
 .home-work {
-  width: 100%; border-top: 1px solid var(--line);
-  margin-bottom: 36px;
+  width: 100%; margin-bottom: 36px;
+}
+.home-work-label {
+  font-family: var(--serif); font-weight: 300; font-style: italic;
+  font-size: clamp(15px, 1.8vw, 18px); color: var(--muted);
+  padding-bottom: 20px; border-bottom: 1px solid var(--line);
+  margin-bottom: 0;
 }
 .home-proj {
   display: flex; flex-direction: column; gap: 5px;
