@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Aiaru — Surveyed work</title>
-<meta name="description" content="Kazakhstan's first freight marketplace, solo in 14 days. Civic transit tooling, an AI trade agent, an open-source CRM, and client builds." />
+<title>Aiaru — Work</title>
+<meta name="description" content="Things I've shipped. Kazakhstan's first freight marketplace, solo. Civic transit tooling, AI trade agent, open-source CRM." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -12,82 +12,87 @@
 </head>
 <body>
 
-<div class="wrap">
+<header class="nav" id="nav">
+  <div class="shell nav-in">
+    <a href="index.html" class="brand"><span class="mk"></span>Aiaru</a>
+    <nav class="nav-links">
+      <a href="index.html" class="label">Home</a>
+      <a href="work.html" class="label active">Work</a>
+      <a href="about.html" class="label">About</a>
+      <a href="contact.html" class="label">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <header class="nav" id="nav">
-    <div class="shell nav-in">
-      <a href="index.html" class="brand"><span class="mk"></span>Aiaru</a>
-      <nav class="nav-links">
-        <a href="index.html" class="label">Home</a>
-        <a href="work.html" class="label active">Work</a>
-        <a href="about.html" class="label">About</a>
-        <a href="contact.html" class="label">Contact</a>
-      </nav>
-    </div>
-  </header>
+<main class="shell">
 
-  <main class="shell">
+  <section class="work-hero">
+    <h1 class="work-page-title enter e1">Things I've shipped<br>— past 2 months.</h1>
+  </section>
 
-    <section class="hero" style="padding-top:clamp(24px,5vh,56px)">
-      <h2 class="head enter e2" style="max-width:20ch">Things I've shipped — and the one that proves the rest.</h2>
-    </section>
-
-    <!-- proof -->
-    <section class="section">
-      <div class="sheet-dark reveal">
-        <div class="eyebrow"><span class="num">01</span> The proof</div>
-        <div class="proof-grid">
-          <div>
-            <h2>I built Kazakhstan's first freight marketplace. Solo.</h2>
-            <p>My uncle is a carrier with a truck and couldn't find loads. So in Astana I went physical — walked up to shippers, found their emails, collected contact cards. Turned out they were all looking for carriers too. The market was there; nobody had connected it.</p>
-            <p>I bootstrapped it and shipped the first version in two weeks, with real users on the app at launch.</p>
-          </div>
-          <div>
-            <div class="bignum"><span class="n">14</span><span class="l">days, idea → live with users</span></div>
-            <div class="dstats">
-              <div><b>Solo</b><span>Build · sales · ops</span></div>
-              <div><b>1st</b><span>Freight marketplace in KZ</span></div>
-              <div><b>0→1</b><span>Bootstrapped, no funding</span></div>
-            </div>
-          </div>
+  <!-- 01 Zhol -->
+  <section class="section">
+    <div class="eyebrow reveal"><span class="num">01</span></div>
+    <div class="proof-grid reveal">
+      <div>
+        <h2 class="work-proof-heading">i built Kazakhstan's first freight marketplace. solo.</h2>
+        <p class="work-proof-body">my uncle is a carrier with a truck and couldn't find loads. so in Astana I went physical. i walked up to shippers in fairs, found their emails, collected their contact cards. turned out they were all looking for carriers too. the market was there, nobody had connected it. i bootstrapped it and shipped the first version in two weeks, with already 2 shippers on the app at launch. i faked 3–4 postings at first to build trust in them. for now, 1 load is delivered safely.</p>
+        <p class="work-proof-aside">(initially i got yelled at by a logistician with a national award (27+ years in logistics) because i came in to his office with a barely working mvp lol)</p>
+      </div>
+      <div>
+        <div class="bignum"><span class="n">14</span><span class="l">days, idea → live with users</span></div>
+        <div class="dstats">
+          <div><b>Solo</b><span>Build · sales · ops</span></div>
+          <div><b>1st</b><span>Freight marketplace in KZ</span></div>
+          <div><b>0→1</b><span>Bootstrapped, no funding</span></div>
         </div>
       </div>
-    </section>
-
-    <!-- projects -->
-    <section class="section">
-      <div class="eyebrow reveal"><span class="num">02</span> Selected projects</div>
-      <div class="projects reveal d1">
-        <a class="proj" href="https://github.com/aiarunkn/MuniForPublic" target="_blank" rel="noopener">
-          <span class="pidx">01</span>
-          <span class="pm"><h3>MuniForAll <span class="arr">↗</span></h3><p>Outcome of a 9-month Cornerstone Civic Internship with Muni &amp; the SFMTA — civic transit tooling built with the people who actually run the system.</p></span>
-          <span class="ptag">Civic · 9 months</span>
-        </a>
-        <a class="proj" href="https://github.com/aiarunkn/trade-agent" target="_blank" rel="noopener">
-          <span class="pidx">02</span>
-          <span class="pm"><h3>Trade Agent <span class="arr">↗</span></h3><p>An AI agent that analyzes end-to-end trade workflows across Central Asia for shippers — the connective tissue I once did by hand in Astana, automated.</p></span>
-          <span class="ptag">AI agent · Logistics</span>
-        </a>
-        <a class="proj" href="https://github.com/aiarunkn/memoru-crm" target="_blank" rel="noopener">
-          <span class="pidx">03</span>
-          <span class="pm"><h3>Memoru <span class="arr">↗</span></h3><p>Open-source personal CRM that builds your contact list from the notes you take at an event. Made it because I refused to keep my network in a Google Sheet.</p></span>
-          <span class="ptag">Open source · CRM</span>
-        </a>
-      </div>
-    </section>
-
-    <!-- how I work -->
-
-  </main>
-
-  <footer class="shell">
-    <div class="foot-in">
-      <span>© <span data-year></span> Aiaru</span>
-      <span class="footnav"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a></span>
     </div>
-  </footer>
+  </section>
 
-</div>
+  <!-- 02 Projects -->
+  <section class="section">
+    <div class="eyebrow reveal"><span class="num">02</span> Projects</div>
+    <div class="projects reveal d1">
+
+      <a class="proj" href="https://github.com/aiarunkn/MuniForPublic" target="_blank" rel="noopener">
+        <span class="pidx">01</span>
+        <span class="pm">
+          <h3>MuniForAll <span class="arr">↗</span></h3>
+          <p>9 month project with Muni &amp; the SFMTA at Minerva University. helps 3 civic actors surface past legislation proposals.</p>
+        </span>
+        <span class="ptag">Civic · 9 months</span>
+      </a>
+
+      <a class="proj" href="https://github.com/aiarunkn/trade-agent" target="_blank" rel="noopener">
+        <span class="pidx">02</span>
+        <span class="pm">
+          <h3>Trade Agent <span class="arr">↗</span></h3>
+          <p>AI agent that analyzes end-to-end international trade workflows, generates documents across Central Asia for shippers — that's when i got the idea for Zhol.</p>
+        </span>
+        <span class="ptag">AI Agent · Logistics</span>
+      </a>
+
+      <a class="proj" href="https://github.com/aiarunkn/memoru-crm" target="_blank" rel="noopener">
+        <span class="pidx">03</span>
+        <span class="pm">
+          <h3>Memoru <span class="arr">↗</span></h3>
+          <p>my first ever project — made it because i couldn't keep my network in a Google Sheet. personal CRM that builds your contact list + insights from notes and voice recordings from a networking event.</p>
+        </span>
+        <span class="ptag">Open source · CRM</span>
+      </a>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="shell">
+  <div class="foot-in">
+    <span>© <span data-year></span> Aiaru</span>
+    <span class="footnav"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a></span>
+  </div>
+</footer>
 
 <script src="script.js"></script>
 </body>

@@ -388,6 +388,29 @@ body.home {
   line-height: .9; letter-spacing: -.03em; color: var(--text);
 }
 
+/* work page */
+.work-hero { padding: clamp(48px, 8vh, 80px) 0 0; }
+.work-page-title {
+  font-family: var(--sans); font-weight: 700;
+  font-size: clamp(28px, 5vw, 56px);
+  line-height: 1.08; letter-spacing: -.02em; color: var(--text);
+  max-width: 16ch;
+}
+.work-proof-heading {
+  font-family: var(--sans); font-weight: 700;
+  font-size: clamp(18px, 2.4vw, 26px);
+  line-height: 1.2; letter-spacing: -.01em; color: var(--text);
+  margin-bottom: 20px;
+}
+.work-proof-body {
+  font-family: var(--sans); font-size: clamp(14px, 1.6vw, 16px);
+  font-weight: 400; line-height: 1.7; color: var(--body); max-width: 54ch;
+}
+.work-proof-aside {
+  font-family: var(--sans); font-size: 13px; font-weight: 400;
+  line-height: 1.6; color: var(--muted); max-width: 52ch; margin-top: 16px;
+}
+
 /* work page proof sheet */
 .sheet-dark {
   background: var(--bg); color: var(--text); border-radius: 0;
