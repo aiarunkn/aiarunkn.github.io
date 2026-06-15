@@ -406,6 +406,11 @@ body.home {
   font-family: var(--sans); font-size: clamp(14px, 1.6vw, 16px);
   font-weight: 400; line-height: 1.7; color: var(--body); max-width: 54ch;
 }
+.proof-link {
+  color: inherit; border-bottom: 1.5px solid var(--dim);
+  padding-bottom: 1px; transition: border-color .2s;
+}
+.proof-link:hover { border-color: var(--text); }
 .work-proof-aside {
   font-family: var(--sans); font-size: 13px; font-weight: 400;
   line-height: 1.6; color: var(--muted); max-width: 52ch; margin-top: 16px;
