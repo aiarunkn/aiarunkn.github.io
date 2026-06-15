@@ -20,9 +20,7 @@
         <circle cx="500" cy="500" r="489"/>
       </clipPath>
     </defs>
-    <!-- grid lines clipped to sphere -->
     <g clip-path="url(#gc)" stroke="#5C5248" stroke-width="0.75">
-      <!-- latitude lines (15° tilt oblique projection) -->
       <ellipse cx="500" cy="34"  rx="85"  ry="22"/>
       <ellipse cx="500" cy="90"  rx="245" ry="63"/>
       <ellipse cx="500" cy="196" rx="375" ry="97"/>
@@ -32,23 +30,27 @@
       <ellipse cx="500" cy="804" rx="375" ry="97"/>
       <ellipse cx="500" cy="910" rx="245" ry="63"/>
       <ellipse cx="500" cy="966" rx="85"  ry="22"/>
-      <!-- meridians -->
       <line x1="500" y1="11"  x2="500" y2="989"/>
       <ellipse cx="500" cy="500" rx="168" ry="490"/>
       <ellipse cx="500" cy="500" rx="315" ry="490"/>
       <ellipse cx="500" cy="500" rx="424" ry="490"/>
       <ellipse cx="500" cy="500" rx="483" ry="490"/>
     </g>
-    <!-- outer circle -->
     <circle cx="500" cy="500" r="490" stroke="#5C5248" stroke-width="1"/>
   </svg>
 </div>
 
-<nav class="corner-nav">
-  <a href="work.html">Work</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-</nav>
+<header class="nav" id="nav">
+  <div class="shell nav-in">
+    <a href="index.html" class="brand"><span class="mk"></span>Aiaru</a>
+    <nav class="nav-links">
+      <a href="index.html" class="label active">Home</a>
+      <a href="work.html" class="label">Work</a>
+      <a href="about.html" class="label">About</a>
+      <a href="contact.html" class="label">Contact</a>
+    </nav>
+  </div>
+</header>
 
 <main class="home-main">
   <div class="home-col enter">
@@ -60,32 +62,7 @@
     <p class="home-kicker">Solo Founder — Building from Zero</p>
     <h1 class="home-name">Aiaru</h1>
     <p class="home-quote">no ceiling to ambition.</p>
-
-    <div class="home-work">
-      <p class="home-work-label">Things I've built.</p>
-      <a class="home-proj" href="work.html">
-        <span class="home-proj-title">Zhol Freight</span>
-        <span class="home-proj-desc">Kazakhstan's first freight marketplace. Solo build, two weeks, live with users at launch.</span>
-      </a>
-      <a class="home-proj" href="work.html">
-        <span class="home-proj-title">Trade Agent</span>
-        <span class="home-proj-desc">AI agent for end-to-end trade workflows across Central Asia.</span>
-      </a>
-      <a class="home-proj" href="work.html">
-        <span class="home-proj-title">Memoru</span>
-        <span class="home-proj-desc">Open-source personal CRM built from your event notes.</span>
-      </a>
-      <a class="home-proj" href="work.html">
-        <span class="home-proj-title">MuniForAll</span>
-        <span class="home-proj-desc">Civic transit tooling, built with the people who run the system.</span>
-      </a>
-    </div>
-
-    <div class="home-bottom-links">
-      <a href="about.html">My story</a>
-      <span class="home-bottom-sep">·</span>
-      <a href="contact.html">Contact</a>
-    </div>
+    <a class="home-cta" href="work.html">See the work →</a>
 
   </div>
 </main>
