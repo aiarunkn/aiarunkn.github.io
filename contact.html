@@ -3,54 +3,34 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Aiaru — Make contact</title>
-<meta name="description" content="Hiring, collaborating, or comparing notes on building across two continents. Reach Aiaru." />
+<title>Aiaru — Contact</title>
+<meta name="description" content="Reach Aiaru. San Francisco." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,300;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
-<body>
+<body class="contact-page">
 
-<div class="wrap">
+<header class="nav" id="nav">
+  <div class="shell nav-in">
+    <a href="index.html" class="brand"><span class="mk"></span>Aiaru</a>
+    <nav class="nav-links">
+      <a href="index.html" class="label">Home</a>
+      <a href="work.html" class="label">Work</a>
+      <a href="about.html" class="label">About</a>
+      <a href="contact.html" class="nav-cta active">Contact</a>
+    </nav>
+  </div>
+</header>
 
-  <header class="nav" id="nav">
-    <div class="shell nav-in">
-      <a href="index.html" class="brand"><span class="mk"></span>Aiaru</a>
-      <nav class="nav-links">
-        <a href="index.html" class="label">Home</a>
-        <a href="about.html" class="label">About</a>
-        <a href="work.html" class="label">Work</a>
-        <a href="contact.html" class="nav-cta">Let's talk</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="shell">
-
-    <section class="hero" style="padding-top:clamp(30px,7vh,90px)">
-      <div class="eyebrow enter e1"><span class="num">01</span> Let's build something</div>
-      <h2 class="contact-h enter e2">Drop me in. I'll have it shipped by morning.</h2>
-      <p class="csub enter e3">Hiring, collaborating, or just want to compare notes on building across two continents — I'm easy to reach.</p>
-      <a class="mail enter e4" href="mailto:aiaru.nauken@gmail.com">aiaru.nauken@gmail.com</a>
-
-      <div class="socials enter e5">
-        <a class="soc" href="https://www.linkedin.com/in/aiaru-naukenova-5270a9292/" target="_blank" rel="noopener"><span class="sd"></span>LinkedIn</a>
-        <a class="soc" href="https://www.instagram.com/aiarunkn/" target="_blank" rel="noopener"><span class="sd"></span>Instagram</a>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="shell">
-    <div class="foot-in">
-      <span>© <span data-year></span> Aiaru · San Francisco, CA · 37°N</span>
-      <span class="footnav"><a href="index.html">Home</a><a href="about.html">About</a><a href="work.html">Work</a></span>
-      <span>Surveyed in one take.</span>
-    </div>
-  </footer>
-
-</div>
+<main class="contact-main">
+  <div class="contact-col enter e1">
+    <a class="contact-email" href="mailto:aiaru.nauken@gmail.com">aiaru.nauken@gmail.com</a>
+    <p class="contact-where">San Francisco, CA</p>
+    <a class="contact-link" href="https://www.linkedin.com/in/aiaru-naukenova-5270a9292/" target="_blank" rel="noopener">LinkedIn ↗</a>
+  </div>
+</main>
 
 <script src="script.js"></script>
 </body>
