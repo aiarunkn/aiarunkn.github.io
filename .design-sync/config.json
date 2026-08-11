@@ -1,0 +1,13 @@
+{
+  "projectId": "bb10764f-b818-4d21-92fe-9a6fa0eaba35",
+  "pkg": "@aiaru/site-ds",
+  "globalName": "AiaruSiteDS",
+  "shape": "package",
+  "buildCmd": "npm run build",
+  "cssEntry": "dist/styles.css",
+  "overrides": {
+    "Nav": { "cardMode": "column" },
+    "ProjectRow": { "cardMode": "column" }
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}

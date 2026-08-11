@@ -1,0 +1,157 @@
+/* ============================================================
+   @aiaru/site-ds — tokens + component styles
+   Extracted verbatim from aiarunkn.github.io/styles.css.
+   Only the base reset + selectors the 7 components use are
+   included here; page-shell/composition-only classes are not.
+   ============================================================ */
+
+/* Montserrat is loaded from Google Fonts at runtime on the real
+   site (a <link> in each page's <head>), not self-hosted — mirror
+   that here so it's reachable rather than silently missing. */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg:     #F5F2EA;
+  --bg-2:   #EDEADF;
+  --text:   #161616;
+  --body:   #2C2A26;
+  --muted:  #6E6A60;
+  --dim:    #C5BEB4;
+  --line:   #E2DDD2;
+
+  --sans:   "Montserrat", system-ui, sans-serif;
+
+  --max:    1160px;
+  --pad:    clamp(24px, 6vw, 80px);
+}
+
+/* ---- base (needed for component elements to render correctly standalone) ---- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+/* ---- shell ---- */
+.shell { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
+
+/* ============================================================
+   Nav
+   ============================================================ */
+.nav {
+  position: sticky; top: 0; z-index: 50;
+  padding: 0 var(--pad);
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+  background: rgba(245,242,234,.92);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid transparent;
+  transition: border-color .3s;
+}
+.nav.stuck { border-color: var(--line); }
+.brand {
+  font-family: var(--sans); font-weight: 700; font-size: 13px;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--text);
+  display: flex; align-items: center; gap: 10px;
+  transition: opacity .2s;
+}
+.brand:hover { opacity: .6; }
+.brand .mk {
+  width: 18px; height: 18px; border: 1.5px solid var(--dim); border-radius: 50%;
+  display: grid; place-items: center;
+}
+.brand .mk::after { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--muted); }
+.nav-links { display: flex; gap: 24px; align-items: center; }
+.nav-links a {
+  font-family: var(--sans); font-size: 11px; font-weight: 500;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--muted);
+  transition: color .2s;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--text); }
+@media (max-width: 640px) { .nav-links a.label { display: none; } }
+
+/* ============================================================
+   Footer
+   ============================================================ */
+footer { padding: 42px 0 56px; }
+.foot-in {
+  display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px;
+  font-family: var(--sans); font-size: 11px; font-weight: 500;
+  letter-spacing: .06em; text-transform: uppercase;
+  color: var(--muted); border-top: 1px solid var(--line); padding-top: 24px;
+}
+.foot-in a:hover { color: var(--text); }
+.footnav { display: flex; gap: 16px; flex-wrap: wrap; }
+
+/* ============================================================
+   Eyebrow
+   ============================================================ */
+.eyebrow {
+  font-family: var(--sans); font-size: 10px; font-weight: 500;
+  letter-spacing: .2em; text-transform: uppercase; color: var(--muted);
+  display: flex; align-items: center; gap: 12px; margin-bottom: 22px;
+}
+.eyebrow::before { content: ""; width: 22px; height: 1px; background: var(--dim); display: inline-block; }
+
+/* ============================================================
+   Portrait
+   ============================================================ */
+.home-portrait { width: 100%; max-width: 420px; margin-bottom: 28px; }
+.home-portrait img { width: 100%; display: block; filter: grayscale(1) brightness(.9); }
+
+.story-portrait { width: 100%; max-width: 300px; margin-bottom: clamp(48px, 7vh, 72px); }
+.story-portrait img { width: 100%; display: block; filter: grayscale(1) brightness(.9); }
+
+/* ============================================================
+   ProjectRow
+   ============================================================ */
+.projects { margin-top: 38px; border-top: 1px solid var(--line); }
+.proj {
+  display: grid; grid-template-columns: auto 1fr auto; gap: 18px;
+  align-items: baseline; padding: 26px 4px; border-bottom: 1px solid var(--line);
+  transition: padding-left .3s;
+}
+.proj:hover { padding-left: 12px; }
+.proj .pidx { font-family: var(--sans); font-size: 11px; font-weight: 400; color: var(--muted); }
+.proj .pm h3 {
+  font-family: var(--sans); font-weight: 700;
+  font-size: clamp(18px, 2.6vw, 28px); letter-spacing: -.01em; color: var(--text);
+  display: inline-flex; align-items: center; gap: 10px;
+}
+.proj .pm h3 .arr { color: var(--muted); opacity: 0; transform: translateX(-5px); transition: all .3s; }
+.proj:hover .pm h3 .arr { opacity: 1; transform: none; }
+.proj .pm p { color: var(--body); font-size: 14px; font-weight: 400; margin-top: 7px; max-width: 58ch; }
+.proj .ptag {
+  font-family: var(--sans); font-size: 10px; font-weight: 500;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: var(--muted); border: 1px solid var(--line); border-radius: 999px;
+  padding: 4px 11px; white-space: nowrap;
+}
+@media (max-width: 720px) {
+  .proj { grid-template-columns: auto 1fr; gap: 12px; }
+  .proj .ptag { grid-column: 2; margin-top: 6px; }
+}
+
+/* ============================================================
+   StatBlock
+   `.dstats div/b/span` in the source site is scoped to sit
+   inside a `.dstats` flex wrapper. Rebound here onto a
+   self-sufficient `.stat-block` class carrying the same visual
+   rules, so the component renders correctly mounted alone.
+   `.dstats` itself stays available as the plain wrapper class.
+   ============================================================ */
+.dstats { display: flex; gap: 22px; flex-wrap: wrap; margin-top: 26px; }
+.stat-block { border-left: 1px solid var(--dim); padding-left: 14px; }
+.stat-block b { display: block; font-family: var(--sans); font-weight: 700; font-size: 20px; color: var(--text); }
+.stat-block span { font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+
+/* ============================================================
+   BigNumber
+   ============================================================ */
+.bignum .n {
+  font-family: var(--sans); font-weight: 700;
+  font-size: clamp(72px, 13vw, 144px); color: var(--text); opacity: .1;
+  display: block; line-height: .82; letter-spacing: -.04em;
+}
+.bignum .l {
+  font-family: var(--sans); font-size: 11px; font-weight: 500;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-top: 8px;
+}
