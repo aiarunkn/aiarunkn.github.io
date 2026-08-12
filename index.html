@@ -3,42 +3,14 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Aiaru</title>
-<meta name="description" content="Aiaru — 18, San Francisco. Builder." />
+<title>Aiaru Naukenova</title>
+<meta name="description" content="Aiaru Naukenova — San Francisco. I build small tools that remember the things I don't." />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="styles.css" />
 </head>
-<body class="home">
-
-<!-- wireframe globe — fixed background -->
-<div class="globe-bg" aria-hidden="true">
-  <svg viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <defs>
-      <clipPath id="gc">
-        <circle cx="500" cy="500" r="489"/>
-      </clipPath>
-    </defs>
-    <g clip-path="url(#gc)" stroke="#5C5248" stroke-width="0.75">
-      <ellipse cx="500" cy="34"  rx="85"  ry="22"/>
-      <ellipse cx="500" cy="90"  rx="245" ry="63"/>
-      <ellipse cx="500" cy="196" rx="375" ry="97"/>
-      <ellipse cx="500" cy="338" rx="461" ry="119"/>
-      <ellipse cx="500" cy="500" rx="490" ry="127"/>
-      <ellipse cx="500" cy="662" rx="461" ry="119"/>
-      <ellipse cx="500" cy="804" rx="375" ry="97"/>
-      <ellipse cx="500" cy="910" rx="245" ry="63"/>
-      <ellipse cx="500" cy="966" rx="85"  ry="22"/>
-      <line x1="500" y1="11"  x2="500" y2="989"/>
-      <ellipse cx="500" cy="500" rx="168" ry="490"/>
-      <ellipse cx="500" cy="500" rx="315" ry="490"/>
-      <ellipse cx="500" cy="500" rx="424" ry="490"/>
-      <ellipse cx="500" cy="500" rx="483" ry="490"/>
-    </g>
-    <circle cx="500" cy="500" r="490" stroke="#5C5248" stroke-width="1"/>
-  </svg>
-</div>
+<body>
 
 <header class="nav" id="nav">
   <div class="shell nav-in">
@@ -52,21 +24,131 @@
   </div>
 </header>
 
-<main class="home-main">
-  <div class="home-col enter">
+<div class="home-wrap">
+  <div class="light-wash" id="hh-wash" aria-hidden="true"></div>
+  <div class="lamp-glow" id="hh-lamp" aria-hidden="true"></div>
+  <div class="grain-overlay" aria-hidden="true"></div>
 
-    <div class="home-portrait">
-      <img src="images/DSC07091.jpg" alt="Aiaru" />
-    </div>
+  <div class="home-content">
 
-    <p class="home-kicker">Solo Founder — Building from Zero</p>
-    <h1 class="home-name">Aiaru</h1>
-    <p class="home-quote">no ceiling to ambition.</p>
-    <a class="home-cta" href="/work">See the work →</a>
+    <!-- HERO -->
+    <section class="home-hero">
+      <div class="home-hero-left">
+        <div class="home-hero-meta">
+          <span>San Francisco</span><span class="tick"></span><span id="hh-clock"></span>
+        </div>
+        <div class="home-hero-mid">
+          <h1 class="home-hero-title">Aiaru<br>Naukenova</h1>
+          <p class="home-hero-tagline"><span id="hh-typed"></span><span class="home-hero-cursor" aria-hidden="true"></span></p>
+        </div>
+        <div class="home-hero-links">
+          <a href="#make" class="primary">Things I make</a>
+          <a href="mailto:aiaru.nauken@gmail.com" class="secondary">Email</a>
+        </div>
+      </div>
+      <div class="home-hero-portrait">
+        <img src="images/DSC07091.jpg" alt="Aiaru Naukenova" />
+      </div>
+    </section>
+
+    <!-- THINGS I MAKE -->
+    <section id="make" class="home-make shell">
+      <div class="eyebrow"><span class="num">01</span>Things I make</div>
+      <p class="home-make-lead">One thing I use every day, and two I learned from. That's the whole list.</p>
+
+      <div class="feature-panel">
+        <div class="feature-left">
+          <div class="feature-heading">
+            <h2>Memoru</h2>
+            <span class="feature-badge">In daily use</span>
+          </div>
+          <div class="feature-rows">
+            <div class="feature-row">
+              <span class="feature-row-label">Problem</span>
+              <p>I go to events, meet good people, and record voice notes about them. Then the notes die in my phone and the names die with them.</p>
+            </div>
+            <div class="feature-divider"></div>
+            <div class="feature-row">
+              <span class="feature-row-label solution">Solution</span>
+              <p>A personal CRM that listens. Speak after an event; it writes the contact, the context, and what you promised them.</p>
+            </div>
+          </div>
+          <a href="https://memoru-crm.vercel.app/" target="_blank" rel="noopener" class="feature-link">memoru-crm.vercel.app →</a>
+        </div>
+
+        <div class="feature-right">
+          <div class="feature-rec-label">Recording · 00:14</div>
+          <div class="waveform" aria-hidden="true">
+            <span style="animation-delay:0s"></span><span style="animation-delay:.09s"></span><span style="animation-delay:.18s"></span>
+            <span style="animation-delay:.27s"></span><span style="animation-delay:.36s"></span><span style="animation-delay:.45s"></span>
+            <span style="animation-delay:.54s"></span><span style="animation-delay:.63s"></span><span style="animation-delay:.72s"></span>
+            <span style="animation-delay:.81s"></span><span style="animation-delay:.9s"></span><span style="animation-delay:.99s"></span>
+            <span style="animation-delay:1.08s"></span><span style="animation-delay:1.17s"></span><span style="animation-delay:1.26s"></span>
+            <span style="animation-delay:1.35s"></span><span style="animation-delay:1.44s"></span><span style="animation-delay:1.53s"></span>
+          </div>
+          <p class="feature-quote">"met Sofia at the EF dinner — biotech, ex-Genentech, wants an intro to Kamil, follow up Thursday"</p>
+          <div class="feature-divider-dark"></div>
+          <div class="feature-person">
+            <div class="feature-avatar">SF</div>
+            <div>
+              <span class="feature-person-name">Sofia F.</span>
+              <span class="feature-person-meta">Biotech · EF dinner · intro owed</span>
+            </div>
+          </div>
+          <div class="feature-tags">
+            <span class="feature-tag">Follow up Thu</span>
+            <span class="feature-tag">Intro → Kamil</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects">
+        <a class="proj" href="https://trade-agent-orpin.vercel.app/" target="_blank" rel="noopener">
+          <span class="pidx">02</span>
+          <span class="pm">
+            <h3>Trade Agent <span class="arr">↗</span></h3>
+            <p>An agent that reads an international shipment end to end and writes the paperwork nobody wants to write.</p>
+          </span>
+          <span class="ptag">AI Agent · Logistics</span>
+        </a>
+        <a class="proj" href="https://muni-for-public.vercel.app/" target="_blank" rel="noopener">
+          <span class="pidx">03</span>
+          <span class="pm">
+            <h3>MuniForPublic <span class="arr">↗</span></h3>
+            <p>Nine months with Muni and the SFMTA. Surfaces past legislation proposals so civic actors stop re-litigating 2014.</p>
+          </span>
+          <span class="ptag">Civic · 9 months</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="home-contact">
+      <div class="shell home-contact-row">
+        <div>
+          <span class="home-contact-label">Say something</span>
+          <a href="mailto:aiaru.nauken@gmail.com" class="home-contact-email">aiaru.nauken@gmail.com</a>
+        </div>
+        <div class="home-contact-meta">
+          <a href="tel:+16282466641">+1 628 246 6641</a>
+          <span>Minerva '29</span>
+        </div>
+      </div>
+      <footer class="shell home-contact-foot">
+        <div class="foot-in">
+          <span>© <span data-year></span> Aiaru Naukenova</span>
+          <nav class="footnav">
+            <a href="#make">Work</a>
+            <a href="mailto:aiaru.nauken@gmail.com">Email</a>
+          </nav>
+        </div>
+      </footer>
+    </section>
 
   </div>
-</main>
+</div>
 
 <script src="script.js"></script>
+<script src="home.js"></script>
 </body>
 </html>
