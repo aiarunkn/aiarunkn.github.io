@@ -60,18 +60,6 @@ body::before {
   transition: border-color .3s;
 }
 .nav.stuck { border-color: var(--line); }
-.brand {
-  font-family: var(--sans); font-weight: 700; font-size: 13px;
-  letter-spacing: .08em; text-transform: uppercase; color: var(--text);
-  display: flex; align-items: center; gap: 10px;
-  transition: opacity .2s;
-}
-.brand:hover { opacity: .6; }
-.brand .mk {
-  width: 18px; height: 18px; border: 1.5px solid var(--dim); border-radius: 50%;
-  display: grid; place-items: center;
-}
-.brand .mk::after { content: ""; width: 5px; height: 5px; border-radius: 50%; background: var(--muted); }
 .nav-links { display: flex; gap: 24px; align-items: center; }
 .nav-links a {
   font-family: var(--sans); font-size: 11px; font-weight: 500;
@@ -153,40 +141,6 @@ p.body strong { color: var(--text); font-weight: 600; }
 .btn.solid:hover { background: transparent; color: var(--text); border-color: var(--dim); }
 .btn.ghost:hover { background: var(--text); color: var(--bg); border-color: var(--text); }
 .ctas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
-
-/* ============================================================
-   CONTACT PAGE
-   ============================================================ */
-
-body.contact-page {
-  min-height: 100svh;
-  display: flex; flex-direction: column;
-}
-.contact-main {
-  flex: 1; display: flex; align-items: center; justify-content: center;
-  padding: clamp(60px, 10vh, 100px) var(--pad);
-}
-.contact-col {
-  display: flex; flex-direction: column; align-items: center;
-  text-align: center; gap: 20px;
-}
-.contact-email {
-  font-family: var(--sans); font-weight: 600;
-  font-size: clamp(20px, 3.6vw, 40px); letter-spacing: -.01em;
-  color: var(--text); transition: color .2s;
-}
-.contact-email:hover { color: var(--muted); }
-.contact-where {
-  font-family: var(--sans); font-size: 11px; font-weight: 500;
-  letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
-}
-.contact-link {
-  font-family: var(--sans); font-size: 11px; font-weight: 500;
-  letter-spacing: .1em; text-transform: uppercase; color: var(--muted);
-  border-bottom: 1px solid var(--dim); padding-bottom: 2px;
-  transition: color .2s, border-color .2s;
-}
-.contact-link:hover { color: var(--text); border-color: var(--muted); }
 
 /* ============================================================
    ABOUT PAGE
@@ -499,10 +453,10 @@ footer { padding: 42px 0 56px; }
 /* atmosphere overlays */
 .light-wash { position: fixed; inset: 0; z-index: 2; pointer-events: none; opacity: .6; background: var(--light-wash, transparent); }
 .lamp-glow {
-  position: fixed; left: 0; top: 0; width: 720px; height: 720px; margin: -360px 0 0 -360px;
+  position: fixed; left: 0; top: 0; width: 420px; height: 420px; margin: -210px 0 0 -210px;
   z-index: 3; pointer-events: none; opacity: 0; transition: opacity 1.1s ease;
   will-change: transform; contain: paint;
-  background: radial-gradient(circle at center, rgba(255,236,196,.5) 0%, rgba(255,220,158,.22) 30%, rgba(255,198,124,.06) 56%, rgba(255,190,120,0) 74%);
+  background: radial-gradient(circle at center, rgba(255,238,202,.9) 0%, rgba(255,222,164,.5) 26%, rgba(255,200,128,.16) 52%, rgba(255,190,120,0) 74%);
 }
 .lamp-glow.on { opacity: 1; }
 .grain-overlay { position: fixed; inset: 0; z-index: 4; pointer-events: none; opacity: .5; background-image: url("images/grain.png"); background-size: 128px 128px; }
