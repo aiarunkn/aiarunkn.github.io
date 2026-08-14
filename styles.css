@@ -517,16 +517,40 @@ footer { padding: 42px 0 56px; }
 .home-make-lead { color: var(--body); max-width: 44ch; font-size: 15px; line-height: 1.6; margin-bottom: clamp(34px, 5vh, 54px); }
 .home-proof { margin-bottom: clamp(40px, 6vh, 64px); }
 
-.feature-panel { display: grid; grid-template-columns: .85fr 1.15fr; align-items: stretch; border: 1px solid var(--line); background: var(--bg-2); overflow: hidden; }
-.feature-left { padding: clamp(28px, 3.4vw, 48px); display: flex; flex-direction: column; gap: 20px; justify-content: center; }
+.feature-panel { display: grid; grid-template-columns: .85fr 1.15fr; align-items: stretch; border: 1px solid var(--line); background: var(--bg-2); border-radius: 14px; overflow: hidden; }
+.feature-left { padding: clamp(28px, 3.4vw, 48px); display: flex; flex-direction: column; gap: 16px; justify-content: center; }
 .feature-heading { display: flex; align-items: baseline; gap: 14px; }
 .feature-heading h2 { font-family: var(--sans); font-size: clamp(30px, 4vw, 54px); font-weight: 700; letter-spacing: -.035em; line-height: 1; margin: 0; color: var(--text); }
-.feature-num { font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
-.feature-desc { font-family: var(--sans); font-size: clamp(16px, 1.5vw, 20px); line-height: 1.5; color: var(--body); max-width: 32ch; margin: 0; }
-.feature-link { align-self: flex-start; font-family: var(--sans); font-size: 10px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--text); border-bottom: 1px solid var(--text); padding-bottom: 4px; }
+.feature-desc { font-family: var(--sans); font-size: clamp(17px, 1.6vw, 22px); font-weight: 500; line-height: 1.5; color: var(--text); max-width: 32ch; margin: 0; }
+.feature-link { align-self: flex-start; font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: .04em; color: var(--text); border-bottom: 1.5px solid var(--text); padding-bottom: 4px; }
 
-.feature-right { background: #161616; border-left: 1px solid var(--line); display: flex; align-items: center; justify-content: center; padding: clamp(16px, 2vw, 24px); }
-.feature-screenshot { width: 100%; height: auto; border-radius: 10px; box-shadow: 0 12px 32px rgba(22,22,22,.28); }
+.feature-right { background: #161616; border-left: 1px solid var(--line); display: flex; align-items: stretch; justify-content: center; padding: clamp(24px, 3vw, 36px); }
+
+/* memoru card — real markup, not a screenshot */
+.memoru-card { width: 100%; display: flex; flex-direction: column; font-family: var(--sans); color: #fff; }
+.memoru-card-top { display: flex; justify-content: space-between; align-items: flex-start; }
+.memoru-card-name-row { display: flex; align-items: center; gap: 10px; }
+.memoru-card-name { font-size: clamp(18px, 2vw, 22px); font-weight: 700; color: #fff; }
+.memoru-card-pill {
+  display: inline-flex; align-items: center; gap: 6px; font-size: 11px; font-weight: 600;
+  color: #ffb4a8; background: rgba(255,90,70,.16); border-radius: 999px; padding: 3px 10px 3px 8px;
+}
+.memoru-card-pill-dot { width: 6px; height: 6px; border-radius: 50%; background: #ff6b57; }
+.memoru-card-close { color: rgba(255,255,255,.35); font-size: 16px; line-height: 1; }
+.memoru-card-role { font-size: 14px; color: rgba(255,255,255,.68); margin-top: 8px; }
+.memoru-card-context { font-size: 13px; color: rgba(255,255,255,.42); margin-top: 2px; }
+.memoru-card-action { margin-top: 18px; border: 1px solid rgba(255,255,255,.12); border-radius: 10px; padding: 16px 18px; }
+.memoru-card-action-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; margin-bottom: 10px; }
+.memoru-card-action-label { font-size: 10px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: rgba(255,255,255,.4); }
+.memoru-card-copy { font-size: 11px; font-weight: 500; color: rgba(255,255,255,.5); }
+.memoru-card-message { font-size: clamp(14px, 1.4vw, 16px); line-height: 1.55; color: rgba(255,255,255,.92); margin: 0; }
+.memoru-card-note { font-size: 13px; line-height: 1.6; color: rgba(255,255,255,.55); margin-top: 16px; }
+.memoru-card-quote {
+  margin: 12px 0 0; padding-left: 14px; border-left: 2px solid rgba(255,255,255,.2);
+  font-size: 13px; font-style: italic; line-height: 1.55; color: rgba(255,255,255,.68);
+}
+.memoru-card-tags { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+.memoru-card-tag { font-size: 11px; color: rgba(255,255,255,.7); background: rgba(255,255,255,.08); border-radius: 999px; padding: 5px 12px; }
 @media (max-width: 820px) {
   .feature-panel { grid-template-columns: 1fr; }
   .feature-right { border-left: none; border-top: 1px solid var(--line); }
