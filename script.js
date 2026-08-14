@@ -6,6 +6,29 @@
     document.body.classList.add('loaded');
   });
 
+  /* page transition — quick horizontal motion blur between internal pages */
+  var body = document.body;
+  if (!reduce) {
+    body.classList.add('page-enter');
+    body.addEventListener('animationend', function onEnterEnd(e){
+      if (e.target === body && e.animationName === 'page-enter-anim') {
+        body.classList.remove('page-enter');
+        body.removeEventListener('animationend', onEnterEnd);
+      }
+    });
+
+    document.querySelectorAll('a[href^="/"]').forEach(function(a){
+      a.addEventListener('click', function(ev){
+        if (ev.defaultPrevented || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey || a.target === '_blank') return;
+        var dest = a.getAttribute('href');
+        ev.preventDefault();
+        body.classList.remove('page-enter');
+        body.classList.add('page-exit');
+        setTimeout(function(){ window.location.href = dest; }, 200);
+      });
+    });
+  }
+
   /* year stamps */
   Array.prototype.forEach.call(document.querySelectorAll('[data-year]'), function(el){
     el.textContent = new Date().getFullYear();
