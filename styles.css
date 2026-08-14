@@ -514,5 +514,4 @@ footer { padding: 42px 0 56px; }
 .feature-heading h2 { font-family: var(--sans); font-size: clamp(30px, 4vw, 54px); font-weight: 700; letter-spacing: -.035em; line-height: 1; margin: 0; color: var(--text); }
 .feature-num { font-family: var(--sans); font-size: 10px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
 .feature-desc { font-family: var(--sans); font-size: clamp(16px, 1.5vw, 20px); line-height: 1.5; color: var(--body); max-width: 32ch; margin: 0; }
-.feature-note { font-family: var(--sans); font-size: 13px; line-height: 1.5; color: var(--muted); max-width: 42ch; margin: 0; }
 .feature-link { align-self: flex-start; font-family: var(--sans); font-size: 10px; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--text); border-bottom: 1px solid var(--text); padding-bottom: 4px; }
