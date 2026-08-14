@@ -493,9 +493,15 @@ footer { padding: 42px 0 56px; }
 .home-hero-links a.secondary { color: var(--muted); }
 
 .home-hero-portrait { position: relative; border-left: 1px solid var(--line); background: var(--bg-2); overflow: hidden; min-height: 60vh; }
-.home-hero-portrait img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 52% 38%; filter: grayscale(.82) contrast(1.06) brightness(.94); }
+.home-hero-portrait-main { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 52% 38%; filter: grayscale(.82) contrast(1.06) brightness(.94); }
+.home-hero-portrait-overlay {
+  position: absolute; z-index: 2; right: clamp(16px, 3vw, 32px); bottom: clamp(16px, 3vw, 32px);
+  width: clamp(120px, 26%, 220px); aspect-ratio: 3 / 4; object-fit: cover; object-position: center 25%;
+  border: 3px solid var(--bg); box-shadow: 0 10px 30px rgba(22,22,22,.35);
+  filter: grayscale(.82) contrast(1.06) brightness(.94);
+}
 .home-hero-portrait::after {
-  content: ""; position: absolute; inset: 0;
+  content: ""; position: absolute; inset: 0; z-index: 1;
   background: linear-gradient(180deg, rgba(245,242,234,.14) 0%, rgba(22,22,22,.06) 55%, rgba(22,22,22,.3) 100%);
 }
 @media (max-width: 820px) {
