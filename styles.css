@@ -152,37 +152,6 @@ p.body strong { color: var(--text); font-weight: 600; }
 .ctas { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 34px; }
 
 /* ============================================================
-   CONTACT PAGE
-   ============================================================ */
-
-.contact-main {
-  min-height: calc(100vh - 60px);
-  display: flex; align-items: center; justify-content: center;
-  padding: clamp(60px, 10vh, 100px) var(--pad);
-}
-.contact-col {
-  display: flex; flex-direction: column; align-items: center;
-  text-align: center; gap: 20px;
-}
-.contact-email {
-  font-family: var(--sans); font-weight: 600;
-  font-size: clamp(20px, 3.6vw, 40px); letter-spacing: -.01em;
-  color: var(--text); transition: color .2s;
-}
-.contact-email:hover { color: var(--muted); }
-.contact-where {
-  font-family: var(--sans); font-size: 11px; font-weight: 500;
-  letter-spacing: .12em; text-transform: uppercase; color: var(--muted);
-}
-.contact-link {
-  font-family: var(--sans); font-size: 11px; font-weight: 500;
-  letter-spacing: .1em; text-transform: uppercase; color: var(--muted);
-  border-bottom: 1px solid var(--dim); padding-bottom: 2px;
-  transition: color .2s, border-color .2s;
-}
-.contact-link:hover { color: var(--text); border-color: var(--muted); }
-
-/* ============================================================
    ABOUT PAGE
    ============================================================ */
 
