@@ -15,6 +15,49 @@
   }
   if (washEl) { paintWash(); setInterval(paintWash, 30000); }
 
+  /* typing effect */
+  var typedEl = document.getElementById('hh-typed');
+  if (typedEl) {
+    var lines = [
+      "I build small tools that remember the things I don't.",
+      "Functional is the floor. Beautiful is the point.",
+      "Currently turning my voice notes into a contact database.",
+      "If it works but it's ugly, I won't use it. So I rebuild it."
+    ];
+    var i = 0, typed = '', mode = 'type', t;
+    var sentenceMs = 5000;
+
+    function schedule(ms){ clearTimeout(t); t = setTimeout(advance, ms); }
+    function paint(){ typedEl.textContent = typed; }
+
+    function advance(){
+      var full = lines[i % lines.length];
+      if (mode === 'type') {
+        if (typed.length < full.length) {
+          var ch = full[typed.length];
+          typed = full.slice(0, typed.length + 1);
+          paint();
+          schedule(/[.,—]/.test(ch) ? 260 : 28 + Math.random() * 46);
+        } else {
+          mode = 'hold';
+          schedule(sentenceMs);
+        }
+      } else if (mode === 'hold') {
+        mode = 'erase';
+        schedule(240);
+      } else if (typed.length > 0) {
+        typed = typed.slice(0, -1);
+        paint();
+        schedule(34);
+      } else {
+        i = (i + 1) % lines.length;
+        mode = 'type';
+        schedule(420);
+      }
+    }
+    schedule(700);
+  }
+
   /* cursor-follow lamp glow */
   var lampEl = document.getElementById('hh-lamp');
   if (lampEl && !reduce && window.matchMedia && window.matchMedia('(hover:hover) and (pointer:fine)').matches) {
