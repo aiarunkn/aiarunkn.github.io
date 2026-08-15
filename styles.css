@@ -401,11 +401,6 @@ body.home {
   font-weight: 400; line-height: 1.7; color: var(--body); max-width: 54ch;
 }
 .work-proof-body + .work-proof-body { margin-top: 16px; }
-.todo-token {
-  font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: .88em;
-  background: rgba(230,140,40,.16); color: var(--text);
-  padding: 1px 6px; border-radius: 4px;
-}
 .proof-link {
   color: inherit; border-bottom: 1.5px solid var(--dim);
   padding-bottom: 1px; transition: border-color .2s;
