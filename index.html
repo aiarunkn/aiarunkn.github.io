@@ -1,157 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Aiaru Naukenova</title>
-<meta name="description" content="Aiaru Naukenova — San Francisco. I build small tools that remember the things I don't." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aiaru Naukenova — Portfolio</title>
+<meta name="description" content="Aiaru Naukenova. Business and computer science at Minerva University. Projects in logistics, AI, and civic technology.">
+<meta name="theme-color" content="#faf9f6">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
 </head>
 <body>
-
-<header class="nav" id="nav">
-  <div class="shell nav-in">
-    <nav class="nav-links">
-      <a href="/" class="label active">Home</a>
-      <a href="/about" class="label">About</a>
-    </nav>
-  </div>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header shell">
+  <a class="site-name" href="./">Aiaru Naukenova</a>
+  <nav aria-label="Main navigation"><a href="#projects">Projects</a><a href="about.html">About</a><a href="mailto:aiaru.nauken@gmail.com">Contact ↗</a></nav>
 </header>
 
-<div class="home-wrap">
-  <div class="light-wash" id="hh-wash" aria-hidden="true"></div>
-  <div class="lamp-glow" id="hh-lamp" aria-hidden="true"></div>
-  <div class="grain-overlay" aria-hidden="true"></div>
-  <div class="branch-deco" id="hh-branch" aria-hidden="true">
-    <svg width="132" height="100%" viewBox="0 0 132 1000" preserveAspectRatio="none" class="branch-svg">
-      <path id="hh-stem" d="M46 -12 C 20 96, 74 188, 40 282 C 10 372, 68 442, 52 538 C 38 626, 8 688, 34 780 C 56 858, 78 902, 54 1012" stroke="#2C2A26" stroke-width="1.7" stroke-linecap="round" opacity="0.55"></path>
-      <g id="hh-twigs" stroke="#2C2A26" stroke-width="1.15" stroke-linecap="round" opacity="0.4"></g>
-      <g id="hh-thorns" stroke="#2C2A26" stroke-width="1.1" stroke-linecap="round" opacity="0.42"></g>
-    </svg>
-    <div id="hh-blooms" class="branch-blooms"></div>
-  </div>
+<main id="main" class="shell">
+  <section class="hero" aria-labelledby="intro-title">
+    <div class="hero-copy">
+      <p class="eyebrow">San Francisco · Minerva University ’29</p>
+      <h1 id="intro-title">Hi, I’m Aiaru.</h1>
+      <p class="intro">I study business and computer science, and build tools for everyday problems.</p>
+      <p class="hero-detail">Originally from Astana, Kazakhstan. My work spans freight logistics, personal software, and civic technology.</p>
+      <div class="hero-links"><a class="text-link" href="#projects">Explore my projects <span aria-hidden="true">↓</span></a><a class="quiet-link" href="about.html">A little about me ↗</a></div>
+    </div>
+    <img class="hero-photo" src="images/aiaru-hero-street.jpg" alt="Aiaru outside a building in San Francisco" width="1203" height="1800" fetchpriority="high">
+  </section>
 
-  <div class="home-content">
+  <section class="work-section" id="projects" aria-labelledby="projects-title">
+    <div class="section-heading"><h2 id="projects-title">Selected projects</h2><span>A few things I’ve built</span></div>
+    <div class="project-grid">
+      <article class="project">
+        <p class="project-category">Logistics · Marketplace</p>
+        <h3><a href="https://getzhol.com/landing.html" target="_blank" rel="noopener noreferrer">Zhol <span aria-hidden="true">↗</span></a></h3>
+        <p>A freight marketplace connecting shippers and truck drivers in Kazakhstan directly.</p>
+        <p class="project-detail">Inspired by my uncle’s experience finding loads. I built the platform end to end, including carrier verification and deal confirmation.</p>
+        <div class="project-bottom"><span>Next.js · Supabase · Tailwind</span><a href="https://getzhol.com/landing.html" target="_blank" rel="noopener noreferrer" aria-label="Visit Zhol">Visit project ↗</a></div>
+      </article>
+      <article class="project">
+        <p class="project-category">Personal software · CRM</p>
+        <h3><a href="https://memoru-crm.vercel.app/" target="_blank" rel="noopener noreferrer">Memoru <span aria-hidden="true">↗</span></a></h3>
+        <p>A personal CRM that turns voice notes into a contact database.</p>
+        <p class="project-detail">A way to remember the people I meet, keep context from conversations, and make following up easier.</p>
+        <div class="project-bottom"><span>Voice notes · Contact management</span><a href="https://memoru-crm.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit Memoru">Visit project ↗</a></div>
+      </article>
+      <article class="project">
+        <p class="project-category">AI · International trade</p>
+        <h3><a href="https://trade-agent-orpin.vercel.app/" target="_blank" rel="noopener noreferrer">Trade Agent <span aria-hidden="true">↗</span></a></h3>
+        <p>An AI agent that reads shipment details and prepares trade paperwork.</p>
+        <p class="project-detail">Built to make the documentation side of international shipping more manageable.</p>
+        <div class="project-bottom"><span>AI agents · Logistics</span><a href="https://trade-agent-orpin.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit Trade Agent">Visit project ↗</a></div>
+      </article>
+      <article class="project">
+        <p class="project-category">Civic technology · San Francisco</p>
+        <h3><a href="https://muni-for-public.vercel.app/" target="_blank" rel="noopener noreferrer">MuniForPublic <span aria-hidden="true">↗</span></a></h3>
+        <p>A tool for finding past legislation proposals related to San Francisco transit.</p>
+        <p class="project-detail">Developed through nine months of work with Muni and the SFMTA to make previous proposals easier to find and reference.</p>
+        <div class="project-bottom"><span>Public transit · Research</span><a href="https://muni-for-public.vercel.app/" target="_blank" rel="noopener noreferrer" aria-label="Visit MuniForPublic">Visit project ↗</a></div>
+      </article>
+    </div>
+  </section>
+  <section class="contact" aria-labelledby="contact-title">
+    <div><h2 id="contact-title">Get in touch</h2><p>Have a project in mind, or just want to say hello?</p></div>
+    <a class="text-link" href="mailto:aiaru.nauken@gmail.com">aiaru.nauken@gmail.com ↗</a>
+  </section>
+</main>
 
-    <!-- HERO -->
-    <section class="home-hero">
-      <div class="home-hero-left">
-        <div class="home-hero-meta">
-          <span>San Francisco</span><span class="tick"></span><span>Minerva '29</span>
-        </div>
-        <div class="home-hero-mid">
-          <h1 class="home-hero-title">Aiaru<br>Naukenova</h1>
-          <p class="home-hero-tagline"><span id="hh-typed"></span><span class="home-hero-cursor" aria-hidden="true"></span></p>
-          <p class="home-hero-cta"><a href="mailto:aiaru.nauken@gmail.com">let's talk</a></p>
-        </div>
-        <div class="home-hero-links">
-          <a href="#make" class="primary">Things I make</a>
-        </div>
-      </div>
-      <div class="home-hero-portrait">
-        <img src="images/aiaru-hero-street.jpg" alt="Aiaru Naukenova" class="home-hero-portrait-main" />
-      </div>
-    </section>
-
-    <!-- THINGS I MAKE -->
-    <section id="make" class="home-make shell">
-      <div class="proof-grid home-proof">
-        <div>
-          <h2 class="work-proof-heading">Zhol — Kazakhstan's first freight marketplace. built solo. <a href="https://getzhol.com/landing.html" target="_blank" rel="noopener" class="proof-link">live ↗</a></h2>
-          <p class="work-proof-body">my uncle drives a truck and couldn't find loads — brokers took 30% and carried none of the risk. so i built the thing that cuts them out: a two-sided marketplace matching shippers and carriers directly.</p>
-          <p class="work-proof-body">built and shipped to production alone: Next.js 14, Supabase, Vercel, Tailwind. idea to live users in 14 days, bootstrapped. real shippers post real loads on it today.</p>
-          <p class="work-proof-body">what i owned end to end: the schema, the carrier verification logic (техпаспорт + ID + BIN cross-check), the deal-confirmation flow, and the Karaganda field work that shaped all of it.</p>
-        </div>
-        <div>
-          <div class="bignum"><span class="n">14</span><span class="l">days, idea → live with users</span></div>
-        </div>
-      </div>
-
-      <div class="feature-panel">
-        <div class="feature-left">
-          <div class="feature-heading">
-            <h2>Memoru</h2>
-          </div>
-          <p class="feature-desc">A personal CRM that listens.</p>
-          <a href="https://memoru-crm.vercel.app/" target="_blank" rel="noopener" class="feature-link">Try it →</a>
-        </div>
-        <div class="feature-right">
-          <div class="memoru-card">
-            <span class="memoru-card-demo-tag">Sample data — for illustration</span>
-            <div class="memoru-card-top">
-              <div class="memoru-card-name-row">
-                <span class="memoru-card-name">Marcus Chen</span>
-                <span class="memoru-card-pill"><span class="memoru-card-pill-dot"></span>hot</span>
-              </div>
-              <span class="memoru-card-close" aria-hidden="true">×</span>
-            </div>
-            <p class="memoru-card-role">General Partner · Anchor Point Ventures</p>
-            <p class="memoru-card-context">SF Tech Week</p>
-            <div class="memoru-card-action">
-              <div class="memoru-card-action-head">
-                <span class="memoru-card-action-label">Next action · Draft message</span>
-                <span class="memoru-card-copy">Copy</span>
-              </div>
-              <p class="memoru-card-message">Hi Marcus — following up from SF Tech Week! We just closed our 3rd enterprise pilot. Would love to share numbers.</p>
-            </div>
-            <p class="memoru-card-note">Super engaged about AI agents in enterprise workflows. Wants to see traction before a formal meeting.</p>
-            <blockquote class="memoru-card-quote">"Get 10 paying enterprise logos before Series A. Even small pilots count."</blockquote>
-            <div class="memoru-card-tags">
-              <span class="memoru-card-tag">vc</span>
-              <span class="memoru-card-tag">enterprise</span>
-              <span class="memoru-card-tag">ai</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="projects">
-        <a class="proj" href="https://trade-agent-orpin.vercel.app/" target="_blank" rel="noopener">
-          <span class="pidx">02</span>
-          <span class="pm">
-            <h3>Trade Agent <span class="arr">↗</span></h3>
-            <p>An agent that reads an international shipment end to end and writes the paperwork nobody wants to write.</p>
-          </span>
-          <span class="ptag">AI Agent · Logistics</span>
-        </a>
-        <a class="proj" href="https://muni-for-public.vercel.app/" target="_blank" rel="noopener">
-          <span class="pidx">03</span>
-          <span class="pm">
-            <h3>MuniForPublic <span class="arr">↗</span></h3>
-            <p>Nine months with Muni and the SFMTA. Surfaces past legislation proposals so civic actors stop re-litigating 2014.</p>
-          </span>
-          <span class="ptag">Civic · 9 months</span>
-        </a>
-      </div>
-    </section>
-
-    <section class="home-contact">
-      <div class="shell home-contact-row">
-        <div>
-          <a href="mailto:aiaru.nauken@gmail.com" class="home-contact-email">aiaru.nauken@gmail.com</a>
-        </div>
-        <div class="home-contact-meta">
-          <span>Minerva '29</span>
-        </div>
-      </div>
-      <footer class="shell home-contact-foot">
-        <div class="foot-in">
-          <span>© <span data-year></span> Aiaru Naukenova</span>
-          <nav class="footnav">
-            <a href="https://github.com/aiarunkn" target="_blank" rel="noopener">GitHub ↗</a>
-            <a href="https://www.linkedin.com/in/aiaru-naukenova-5270a9292/" target="_blank" rel="noopener">LinkedIn ↗</a>
-          </nav>
-        </div>
-      </footer>
-    </section>
-
-  </div>
-</div>
-
-<script src="script.js"></script>
-<script src="home.js"></script>
+<footer class="site-footer shell">
+  <span>© <span data-year>2026</span> Aiaru Naukenova</span>
+  <nav aria-label="Social links">
+    <a href="https://github.com/aiarunkn" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/aiaru-naukenova-5270a9292/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    <a href="mailto:aiaru.nauken@gmail.com">Email ↗</a>
+  </nav>
+</footer>
 </body>
 </html>
