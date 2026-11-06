@@ -18,6 +18,7 @@ nav a[aria-current] { color:var(--accent); text-decoration:underline; }
 .hero { display:grid; grid-template-columns:1fr 240px; align-items:center; gap:72px; padding:82px 0 88px; }
 .eyebrow { color:var(--muted); font-size:13px; margin-bottom:20px; }
 h1 { font-size:clamp(36px,4.5vw,50px); letter-spacing:-1.8px; margin-bottom:22px; }
+.pronounce { color:var(--muted); font-size:17px; font-weight:400; letter-spacing:0; white-space:nowrap; }
 .intro { font-size:21px; line-height:1.6; letter-spacing:-.35px; }
 .hero-detail { color:var(--muted); margin-top:16px; max-width:500px; }
 .hero-links { display:flex; flex-wrap:wrap; gap:24px; margin-top:28px; font-size:14px; }
