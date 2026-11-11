@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Resume — Aiaru Naukenova</title>
+<meta name="description" content="View and download Aiaru Naukenova’s resume.">
+<meta name="theme-color" content="#faf9f6">
+<link rel="stylesheet" href="/styles.css">
+<script src="/script.js" defer></script>
+<style>
+.resume-main { padding-block:48px 64px; }
+.resume-heading { display:flex; flex-wrap:wrap; justify-content:space-between; align-items:center; gap:20px; margin-bottom:28px; }
+.resume-heading h1 { margin:0; }
+.resume-actions { display:flex; flex-wrap:wrap; gap:20px; font-size:14px; }
+.resume-viewer { width:100%; height:80vh; min-height:500px; border:1px solid var(--line); border-radius:8px; background:white; }
+.site-header nav { flex-wrap:wrap; }
+@media(max-width:540px) { .resume-main { padding-block:32px 40px; } .resume-viewer { min-height:420px; height:70vh; } }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header shell">
+  <a class="site-name" href="./">Aiaru Naukenova</a>
+  <nav aria-label="Main navigation"><a href="/#projects">Projects</a><a href="/#experience">Experience</a><a href="about.html">About</a><a href="/resume" aria-current="page">Resume</a><a href="mailto:aiaru.nauken@gmail.com">Contact ↗</a></nav>
+</header>
+<main id="main" class="shell resume-main">
+  <div class="resume-heading">
+    <h1>Resume</h1>
+    <div class="resume-actions"><a class="text-link" href="/assets/aiaru-naukenova-resume.pdf" download="Aiaru Naukenova Resume.pdf">Download PDF ↓</a><a class="quiet-link" href="/assets/aiaru-naukenova-resume.pdf" target="_blank" rel="noopener noreferrer">Open PDF ↗</a></div>
+  </div>
+  <object class="resume-viewer" data="/assets/aiaru-naukenova-resume.pdf" type="application/pdf" aria-label="Aiaru Naukenova’s resume">
+    <p>Your browser cannot display this PDF inline. <a class="text-link" href="/assets/aiaru-naukenova-resume.pdf">View or download the resume</a>.</p>
+  </object>
+</main>
+<footer class="site-footer shell">
+  <span>© <span data-year>2026</span> Aiaru Naukenova</span>
+  <nav aria-label="Social links">
+    <a href="https://github.com/aiarunkn" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <a href="https://www.linkedin.com/in/aiaru-naukenova-5270a9292/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+    <a href="mailto:aiaru.nauken@gmail.com">Email ↗</a>
+  </nav>
+</footer>
+</body>
+</html>
